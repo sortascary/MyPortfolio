@@ -1,0 +1,66 @@
+body, html {
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  mix-blend-mode: difference;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body, .window, .item, .window_header, .window_button {
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease, 
+    border-color 0.3s ease, 
+    box-shadow 0.3s ease;
+    padding: 0px;
+}
+
+
+:root {
+  --bg: white;
+  --text: black;
+  --accent: aliceblue;
+  --border: black;
+  --scrollSec: white;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --accent: #F5EDED;
+  --border: #3E3636;
+  --scrollSec: #D72323;
+}
+
+@font-face {
+  font-family: 'persona';
+  src: url('/fonts/PersonifiedUXRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'earwig';
+  src: url('/fonts/earwig factory rg.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/Helvetica.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+colors:
+#000000
+#3E3636
+#D72323
+#F5EDED*/

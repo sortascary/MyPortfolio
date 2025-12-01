@@ -12,10 +12,10 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const frames = [
-  "/frame1.png",
-  "/frame2.png",
-  "/frame3.png",
-  "/frame4.png"
+  "frame1.png",
+  "frame2.png",
+  "frame3.png",
+  "frame4.png"
 ];
 
 function App() {

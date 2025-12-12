@@ -53,7 +53,7 @@ body, .window, .item, .window_header, .window_button {
 }
 @font-face {
   font-family: 'helvetica';
-  src: url('/fonts/Helvetica.otf') format('truetype');
+  src: url('/fonts/Helvetica.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

@@ -9,12 +9,12 @@ function HeaderSection({ dark, setDark }){
             <div className='divNav'>
                  <ul>
                     <li><a href="#" className='tri-btn'>Home</a></li>
-                    <li><a href="#" className='tri-btn'>Home</a></li>
-                    <li><a href="#" className='tri-btn'>Home</a></li>
+                    <li><a href="#" className='tri-btn'>About Me</a></li>
+                    <li><a href="#test" className='tri-btn'>Contact</a></li>
                  </ul>
                 <div>
-                    <button onClick={() => setDark(!dark)}>
-                        {dark ? "🌙 Dark Mode" : "☀️ Light Mode"}
+                    <button className='ThemeButton' onClick={() => setDark(!dark)}>
+                        {dark ? <img className='ThemeIcon' src="Dark Mode.png" alt="" /> : <img className='ThemeIcon' src="Light Mode.png" alt="" /> }
                     </button>
                 </div>
             </div>

@@ -72,7 +72,6 @@ function Home({ dark }) {
                         <img id="Hero" className="hero" src="Portfolio_Hero.png" alt="" />
                     </div>
                 </div>
-                {/*  */}
             </div>
 
             <div id="filler" className="windowPage" style={{flexDirection:"column", lineHeight: '0px'}}>
@@ -84,9 +83,6 @@ function Home({ dark }) {
             
             {/* Shows my Experiences/Schools */}
             {/* <div className='windowPage'>
-                <div>
-                    <p>oooo </p>
-                </div>  
                 <div className="window">
                     <div className="window_header">
                         <h2>▶ My Experiences</h2>
@@ -100,6 +96,9 @@ function Home({ dark }) {
                         <p>test</p>
                     </div>
                 </div>
+                <div>
+                    <p>oooo </p>
+                </div>  
             </div> */}
             <Footer/>
         </>

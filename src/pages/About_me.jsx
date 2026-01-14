@@ -2,10 +2,10 @@ import Footer from '../components/Footer.jsx'
 import { useState, useEffect } from "react";
 
 const frames = [
-    "/cat/frame2.png",
-    "/cat/frame1.png",
-    "/cat/frame3.png",
-    "/cat/frame4.png"
+    "cat/frame2.png",
+    "cat/frame1.png",
+    "cat/frame3.png",
+    "cat/frame4.png"
 ];
 
 function AboutMe({ dark }) {

@@ -37,11 +37,11 @@ function App() {
         
       <Router>
         <Routes>
-          <Route path="/MyPortfolio" element={<Home dark={dark} />} />
+          <Route path="/MyPortfolio/" element={<Home dark={dark} />} />
           <Route path="/MyPortfolio/AboutMe" element={<AboutMe dark={dark} />} />
           <Route path="/MyPortfolio/Contact" element={<Contact dark={dark} />} />
 
-          <Route path="*" element={<Error />} />
+          <Route path="/MyPortfolio/*" element={<Error />} />
         </Routes>
       </Router>
 

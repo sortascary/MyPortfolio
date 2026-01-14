@@ -3,7 +3,7 @@
         {
             "img": "projects/break_in.png",
             "name": "Break In Game",
-            "desc": "this is a... blah blah blah blah blah blah blah blah blah blah blah blah",
+            "desc": "Inspired by the classic game \"Break-out\". Break In is a game that takes a unique spin on the gameplay loop",
             "GitHub": "",
             "LiveDemo": "https://srp02.itch.io/break-in",
             "Tools": [
@@ -27,13 +27,25 @@
         {
             "img": "projects/PesanBuku.png",
             "name": "PesanBuku app",
-            "desc": "this is a... blah blah blah blah blah blah blah blah blah blah blah blah",
+            "desc": "this is the backend of the PesanBuku app enableing users to buy books from a retailer with more ease and efficiency",
             "GitHub": "https://github.com/sortascary/Backend_pesanbuku",
             "LiveDemo": "",
             "Tools": [
                 "PHP",
                 "Laravel",
                 "MySQL"
+            ]
+        },
+        {
+            "img": "projects/winter_vampire.png",
+            "name": "Winter Vampire",
+            "desc": "A game where you are a vampire who is a tad bit late to Halloween. and now has to find and hunt animals to stay alive whilst avoiding danger",
+            "GitHub": "",
+            "LiveDemo": "https://avarage-breadenjoyer.itch.io/winter-vampire",
+            "Tools": [
+                "C#",
+                "Unity",
+                "Unity Shaders"
             ]
         }
     ]

@@ -105,11 +105,8 @@ function BGShader({ dark }) {
 
     materialRef.current = material; // store it in ref for later updates
 
-    const arcShape = new THREE.Shape()
-    .moveTo(-13, 11.7)
-    .lineTo(13, 6)
-    .lineTo(-11.7, -20.1);  
-    const geometry = new THREE.ShapeGeometry( arcShape );
+    const geometry = new THREE.PlaneGeometry( 11, 11 );
+    geometry.rotateZ(0.3);
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
@@ -130,41 +127,51 @@ function BGShader({ dark }) {
     
     
     gsap.to(camera.position, {
-      z: 70,
+      z: 80,
       scrollTrigger: {
-        trigger: "#Hero",
-        start: "top top",
-        end: () => `${document.documentElement.scrollHeight - window.innerHeight}px`,
+        trigger: "#introduction",
+        endTrigger: "#filler",
+        start: "10% top",
+        end: `center top`,
         scrub: true
-      }
+      },
     });
 
-    // gsap.to(meshP.position, {
-    //   z: 67,
-    //   scrollTrigger: {
-    //     trigger: "#Hero",
-    //     start: "top top",
-    //     end: () => `${document.documentElement.scrollHeight - window.innerHeight}px`,
-    //     scrub: true
-    //   }
-    // });
-
-    gsap.to(camera.rotation, {
-      y: Math.PI * 2,
-      scrollTrigger: {
-        trigger: "#sprite",
-        start: "center",
-        endTrigger: "body",
-        end: () => {
-          const sprite = document.getElementById("sprite");
-          return document.documentElement.scrollHeight - window.innerHeight - sprite.offsetHeight;
-        },
-        scrub: true
+    gsap.fromTo(
+      camera.rotation,
+      { y: 0 },
+      {
+        y: Math.PI,
+        immediateRender:false,
+        scrollTrigger: {
+          //markers:true,
+          trigger: "#introduction",
+          endTrigger:"#filler",
+          start: "center",
+          end: "bottom",
+          scrub: true
+        }
       }
-    });
+    );
 
+    gsap.fromTo(
+      camera.rotation,
+      { y: Math.PI },
+      {
+        y: Math.PI * 2,
+        immediateRender:false,
+        scrollTrigger: {
+          trigger: "#footer",
+          start: "top center",
+          end: "bottom bottom",
+          scrub: true
+        }
+      }
+    );
 
     window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight ;
+      camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
       material.uniforms.iResolution.value.set(window.innerWidth, window.innerHeight);
     });

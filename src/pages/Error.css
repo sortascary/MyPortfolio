@@ -1,0 +1,25 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSprite{
+    width: 300px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.errorMSG1{
+    transform: skew(-15deg, 10deg);
+}
+
+.errorMSG2{
+    transform: skew(-10deg, -1deg);
+}
+
+.errorMSG3{
+    transform: skew(10deg, 5deg);
+}

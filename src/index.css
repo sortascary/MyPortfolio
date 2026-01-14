@@ -1,4 +1,5 @@
 body, html {
+  scrollbar-width: none;
   margin: 0 0;
   padding: 0 0;
   width: 100%;
@@ -22,6 +23,10 @@ body, .window, .item, .window_header, .window_button {
     padding: 0px;
 }
 
+img{
+  user-select: none;
+}
+
 
 :root {
   --bg: white;
@@ -29,6 +34,7 @@ body, .window, .item, .window_header, .window_button {
   --accent: aliceblue;
   --border: black;
   --scrollSec: white;
+  --bghome: #161616;
 }
 
 .dark {
@@ -37,6 +43,7 @@ body, .window, .item, .window_header, .window_button {
   --accent: #F5EDED;
   --border: #3E3636;
   --scrollSec: #D72323;
+  --bghome: #D72323;
 }
 
 @font-face {
@@ -63,4 +70,6 @@ colors:
 #000000
 #3E3636
 #D72323
-#F5EDED*/
+#F5EDED
+//bg
+#161616*/

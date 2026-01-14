@@ -1,0 +1,40 @@
+{
+    "Projects": [
+        {
+            "img": "projects/break_in.png",
+            "name": "Break In Game",
+            "desc": "this is a... blah blah blah blah blah blah blah blah blah blah blah blah",
+            "GitHub": "",
+            "LiveDemo": "https://srp02.itch.io/break-in",
+            "Tools": [
+                "C#",
+                "Unity",
+                "Unity Shaders"
+            ]
+        },
+        {
+            "img": "projects/eyes_on_the_road.png",
+            "name": "Eyes On The Road Game",
+            "desc": "\"Eyes On The Road\" is a simple 2D racing game set in the highway where you have to escape the demon from the tunnel thats following you with your driving skills. Made for a game jam.",
+            "GitHub": "https://github.com/SRP02/Game-Jam-Plus/tree/main/Assets/Scenes",
+            "LiveDemo": "https://srp02.itch.io/eyes-on-the-road ",
+            "Tools": [
+                "C#",
+                "Unity",
+                "Unity Shaders"
+            ]
+        },
+        {
+            "img": "projects/PesanBuku.png",
+            "name": "PesanBuku app",
+            "desc": "this is a... blah blah blah blah blah blah blah blah blah blah blah blah",
+            "GitHub": "https://github.com/sortascary/Backend_pesanbuku",
+            "LiveDemo": "",
+            "Tools": [
+                "PHP",
+                "Laravel",
+                "MySQL"
+            ]
+        }
+    ]
+}

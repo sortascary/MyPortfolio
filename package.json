@@ -14,8 +14,11 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "bootstrap-icons": "^1.13.1",
+    "chart.js": "^4.5.1",
     "gsap": "^3.13.0",
     "react": "^19.2.0",
+    "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.10.1",
     "three": "^0.181.2"

@@ -2,8 +2,12 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import HeaderSection from './components/Header.jsx'
-import Home from './pages/home.jsx'
+import HeaderSection from './components/Header.jsx';
+import Home from './pages/home.jsx';
+import AboutMe from './pages/About_me.jsx';
+import Contact from './pages/Contact.jsx';
+import Error from './pages/Error_page.jsx';
+
 import './App.css'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,14 +31,18 @@ function App() {
 
   return (
     <>
-      <Router>
-        <div className="texture"></div>
-        <HeaderSection dark={dark} setDark={setDark} />
+    
+      <div className="texture"></div>
+      <HeaderSection dark={dark} setDark={setDark} />
         
+      <Router>
         <Routes>
-          <Route path="/MyPortfolio/" element={<Home dark={dark} />} />
-          {/* <Route path="/MyPortfolio/About_me" element={<AboutMe dark={dark} />} />
-          <Route path="/MyPortfolio/Contact" element={<Contact dark={dark} />} />             */}
+          <Route path="/" element={<Home dark={dark} />} />
+          {/* <Route path="/Projects" element={<Chart />} /> */}
+          <Route path="/Portfolio/AboutMe" element={<AboutMe dark={dark} />} />
+          <Route path="/Portfolio/Contact" element={<Contact dark={dark} />} />
+
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
 

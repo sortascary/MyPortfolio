@@ -37,10 +37,9 @@ function App() {
         
       <Router>
         <Routes>
-          <Route path="/" element={<Home dark={dark} />} />
-          {/* <Route path="/Projects" element={<Chart />} /> */}
-          <Route path="/Portfolio/AboutMe" element={<AboutMe dark={dark} />} />
-          <Route path="/Portfolio/Contact" element={<Contact dark={dark} />} />
+          <Route path="/MyPortfolio" element={<Home dark={dark} />} />
+          <Route path="/MyPortfolio/AboutMe" element={<AboutMe dark={dark} />} />
+          <Route path="/MyPortfolio/Contact" element={<Contact dark={dark} />} />
 
           <Route path="*" element={<Error />} />
         </Routes>

@@ -8,9 +8,9 @@ function HeaderSection({ dark, setDark }){
         <nav className='Navbar' id='nav'>
             <div className='divNav'>
                  <ul>
-                    <li><a href="/" className='tri-btn'>Home</a></li>
-                    <li><a href="/Portfolio/AboutMe" className='tri-btn'>About Me</a></li>
-                    <li><a href="/Portfolio/Contact" className='tri-btn'>Contact</a></li>
+                    <li><a href="/MyPortfolio" className='tri-btn'>Home</a></li>
+                    <li><a href="/MyPortfolio/AboutMe" className='tri-btn'>About Me</a></li>
+                    <li><a href="/MyPortfolio/Contact" className='tri-btn'>Contact</a></li>
                  </ul>
                 <div>
                     <button className='ThemeButton' onClick={() => setDark(!dark)}>

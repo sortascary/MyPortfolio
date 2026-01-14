@@ -27,13 +27,13 @@ function Contact({dark}){
                     </form>
                     <div className="RowDiv">
                         <a className='icons' target="_blank" href="https://github.com/sortascary">
-                            <i class="bi bi-github" style={{ fontSize:"2em", color:"black"}}></i>
+                            <i className="bi bi-github" style={{ fontSize:"2em", color:"black"}}></i>
                         </a>
                         <a className='icons' target="_blank" href="https://x.com/sortascary">
-                            <i class="bi bi-twitter" style={{ fontSize:"2em", color:"black"}}></i>
+                            <i className="bi bi-twitter" style={{ fontSize:"2em", color:"black"}}></i>
                         </a>
                         <a className='icons' target="_blank" href="https://www.linkedin.com/in/dzaky-ihsan-rasyid-531b65284/">
-                            <i class="bi bi-linkedin" style={{ fontSize:"2em", color:"black"}}></i>
+                            <i className="bi bi-linkedin" style={{ fontSize:"2em", color:"black"}}></i>
                         </a>
                     </div>
                 </div>

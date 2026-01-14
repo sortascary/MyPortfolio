@@ -7,10 +7,10 @@ const ProjectData = data.Projects;
 function Projects(){
     const [currPage, setCurrPage] = useState(1);
     const [amount, setAmmount] = useState(3);
-        const lastIndex = currPage * amount;
-        const firstIndex = lastIndex - amount;
-        const currProjects = ProjectData.slice(firstIndex, lastIndex);
-        const totalPages = Math.ceil(ProjectData.length / amount);
+    const lastIndex = currPage * amount;
+    const firstIndex = lastIndex - amount;
+    const currProjects = ProjectData.slice(firstIndex, lastIndex);
+    const totalPages = Math.ceil(ProjectData.length / amount);
 
     useEffect(() => {
     });
@@ -25,14 +25,14 @@ function Projects(){
                 <div className="ProjectList" style={{justifyContent:"center"}}>
                     <div style={{height:"80vh"}}>
                         {currProjects.map((p) => (
-                            <div className="ProjectItem" >
+                            <div key={p.name} className="ProjectItem" >
                                 <img src={p.img} loading='lazy' height={"150px"} width={"150px"} className="ProjectImg"/>
                                 <div>
                                     <h1>{p.name}</h1>
                                     <p>{p.desc} </p>
                                     <ul>
                                         {p.Tools.map(tool => (
-                                            <li key={tool}>{tool}</li>
+                                            <li key={p.name + tool}>{tool}</li>
                                         ))}
                                     </ul>
                                 </div>
@@ -65,7 +65,7 @@ function Projects(){
                         }}></i>
 
                         {Array.from({ length: totalPages }, (_, i) => (
-                            <i className="bi bi-circle-fill" onClick={() => setCurrPage(i + 1)} style={{padding: "5px 10px", color: currPage === i + 1 ? "var(--bg)" : "hsla(0, 0%, 100%, 0.226)"}}></i>
+                            <i key={i} className="bi bi-circle-fill" onClick={() => setCurrPage(i + 1)} style={{padding: "5px 10px", color: currPage === i + 1 ? "var(--bg)" : "hsla(0, 0%, 100%, 0.226)"}}></i>
                         ))}
 
                         <i className="bi bi-arrow-right-circle" style={{ fontSize:"2em", color:"var(--bg)", margin:"5px 10px"}} onClick={() => { 

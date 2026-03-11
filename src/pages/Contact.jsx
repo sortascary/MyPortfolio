@@ -14,7 +14,7 @@ function Contact({dark}){
                     <h1 className='TextContact'>Contact Me</h1>
                 </div>
             </div>
-            <div className="window" style={{paddingTop: '20px'}}>
+            <div className="window" style={{paddingTop: '20px', margin: 0}}>
                 <div className="item" style={{flexDirection:"column"}}>
                     <form action="submit" style={{display:"flex", flexDirection:"column"}}>
                         <label htmlFor="name">Name:</label>

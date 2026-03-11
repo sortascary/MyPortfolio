@@ -1,0 +1,16 @@
+.cat{
+    display: none;
+    margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+    .cat{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .cat{
+        display: block;
+    }
+}

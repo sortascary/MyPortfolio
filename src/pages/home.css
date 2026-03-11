@@ -13,17 +13,28 @@
   z-index: 10;
 }
 
+h1 {
+  font-family: 'helvetica', 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.myName {
+  font-size: 1.25em;
+}
+
+.desc{
+  font-size: 1rem;
+}
 
 .frame {
   overflow: hidden;
   padding: 30px;
-  margin: 20px;
   height: 100vh;
 }
 
 .hero {
   display: block;
-  max-width: 26vw;
+  max-width: 150px;
   height: auto;
 }
 
@@ -32,8 +43,8 @@
   position: relative;
   background-color: var(--bg);
   box-shadow: 0 0 0 10px var(--border);
-  margin-top: 50px;
   padding: 5px 20px 20px 20px;
+  margin-top: 50px;
   z-index: 1;
 }
 
@@ -42,7 +53,6 @@
   justify-content: space-between;
   background-color: var(--bg);
   align-items: center;
-  margin: 0;
   border-bottom: 2px solid var(--text);
   margin-bottom: 20px;
 }
@@ -50,6 +60,7 @@
 .window_header h2 {
   color: white;
   mix-blend-mode: difference;
+  font-size: calc(1rem + .9vw);
 }
 
 
@@ -68,6 +79,7 @@
 
 .item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-content: space-evenly;
   align-items: center;
@@ -101,4 +113,40 @@
     z-index: 1;
     left: 0;
     margin: auto;
+}
+
+@media (min-width: 768px) {
+  .myName {
+    font-size: 3em;
+  }
+  .desc{
+    font-size: 1.25rem;
+  }
+  .item{
+    flex-direction: column;
+  }
+  .window{
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .myName{
+    font-size: 5em;
+  }
+  .desc{
+    font-size: 1.5rem;
+  }
+  .item{
+    flex-direction: row;
+  }
+  .window{
+    margin-top: 0;
+  }
+  .window_header h2 {
+    font-size: calc(1rem + .9vw);
+  }
+  .hero {
+    max-width: 450px;
+  }
 }

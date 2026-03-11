@@ -16,7 +16,7 @@ function Home({ dark }) {
 
     useGSAP(() => {
 
-        let split = SplitText.create(".item div h1", {
+        let split = SplitText.create(".myName", {
             type: "chars, words, lines"
         });
         gsap.from(split.chars.reverse(), {
@@ -33,23 +33,12 @@ function Home({ dark }) {
             duration: 1,
             stagger: 0.03,
         })
-
-        gsap.to("#ProjectHeader", {
-            y:600,
-            scrollTrigger: {
-                //markers:true,
-                trigger: ".windowProject",
-                start: "top center",
-                end: "80% center",
-                scrub: true
-            }
-        })
     })
 
     return (
         <>
             <BGShader dark={dark} />
-            <div className="frame" id="introduction">
+            <div className="frame" style={{alignItems: 'center', display: 'flex'}} id="introduction">
                 <div className="window">
                     <div className="window_header">
                         <h2 >▶ Who am I.exe</h2>
@@ -61,12 +50,12 @@ function Home({ dark }) {
                     </div>
                     <div className="item">
                         <div style={{ alignItems: "stretch", alignContent: 'space-between' }}>
-                            <h1 style={{ fontFamily: "helvetica, sans-serif", fontSize: '3em', fontWeight: "bold", textTransform: 'uppercase', color: 'red' }}>Dzaky Ihsan Rasyid</h1>
-                            <p style={{ fontSize: '22px' }}>Current student in Raden Umar Said, Kudus, Indonesia with
+                            <h1 className="myName" style={{ textTransform: 'uppercase', color: 'red' }}>Dzaky Ihsan Rasyid</h1>
+                            <p className="desc">Current student in Raden Umar Said, Kudus, Indonesia with
                                 experience with Android studio, Flutter and Unity. I have
                                 worked with multiple people in my field and can confidently
                                 confirm I am able to work well with others on a project. It
-                                is in my best interest that I try to deliver the Highest
+                                is in my goal to deliver the highest
                                 quality Apps/Games for users to enjoy.</p>
                         </div>
                         <img id="Hero" className="hero" src="Portfolio_Hero.png" alt="" />
@@ -74,8 +63,8 @@ function Home({ dark }) {
                 </div>
             </div>
 
-            <div id="filler" className="windowPage" style={{flexDirection:"column", lineHeight: '0px'}}>
-                <h1>"If you just accept the way things are, then you'll never move forward."</h1>
+            <div id="filler" className="windowPage" style={{flexDirection:"column"}}>
+                <h1 style={{padding: '0 20px'}}>"If you just accept the way things are, then you'll never move forward."</h1>
                 <p>-Natsuki P3R</p>
             </div>
 

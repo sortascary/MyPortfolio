@@ -52,7 +52,7 @@ function BGShader({ dark }) {
           
           float rings = 8.0;
           
-          d = sin(d*rings - iTime * 0.3)/rings;
+          d = sin(d*rings - iTime * 0.15)/rings;
           
           d = abs(d);
           

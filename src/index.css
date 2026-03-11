@@ -64,6 +64,12 @@ img{
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'helvetica_punk';
+  src: url('/fonts/Helvetica_Punk.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*
 colors:

@@ -34,12 +34,11 @@ function App() {
     
       <div className="texture"></div>
       <HeaderSection dark={dark} setDark={setDark} />
-        
       <Router>
         <Routes>
           <Route path="/MyPortfolio/" element={<Home dark={dark} />} />
-          <Route path="/AboutMe" element={<AboutMe dark={dark} />} />
-          <Route path="/Contact" element={<Contact dark={dark} />} />
+          <Route path="/MyPortfolio/Pages/AboutMe" element={<AboutMe dark={dark} />} />
+          <Route path="/MyPortfolio/Pages/Contact" element={<Contact dark={dark} />} />
 
           <Route path="/MyPortfolio/*" element={<Error />} />
         </Routes>

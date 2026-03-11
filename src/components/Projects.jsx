@@ -17,16 +17,106 @@ function Projects(){
     return(
         <>
             <div className='windowProject'>
+                <div className="projectscrolling" style={{transform: 'skew(0deg, 5deg)', top: '0'}}>
+                    <ul>
+                        <li>Project in progress</li>
+                        <li>//</li>
+                        <li>"Momento Mori"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"To live is to die"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"My life is burning bright!"</li>
+                        <li>//</li>
+                    </ul>
+                    <ul aria-hidden="true">
+                        <li>Project in progress</li>
+                        <li>//</li>
+                        <li>"Momento Mori"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"To live is to die"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"My life is burning bright!"</li>
+                        <li>//</li>
+                    </ul>
+                </div>
+                <div className="projectscrolling" style={{transform: 'skew(0deg, -8deg)', top: '55%'}}>
+                    <ul>
+                        <li>Project in progress</li>
+                        <li>//</li>
+                        <li>"Carpe diem"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"Just who the hell do you think i am"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"Fight On!"</li>
+                        <li>//</li>
+                    </ul>
+                    <ul aria-hidden="true">
+                        <li>Project in progress</li>
+                        <li>//</li>
+                        <li>"Carpe diem"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"Just who the hell do you think i am"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"Fight On!"</li>
+                        <li>//</li>
+                    </ul>
+                </div>
+                <div className="projectscrolling" style={{transform: 'skew(0deg, 10deg)', top: '60%'}}>
+                    <ul>
+                        <li>Project in progress</li>
+                        <li>//</li>
+                        <li>"Momento Mori"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"To live is to die"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"My life is burning bright!"</li>
+                        <li>//</li>
+                    </ul>
+                    <ul aria-hidden="true">
+                        <li>Project in progress</li>
+                        <li>//</li>
+                        <li>"Momento Mori"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"To live is to die"</li>
+                        <li>//</li>
+                        <li>Project in Progress</li>
+                        <li>//</li>
+                        <li>"My life is burning bright!"</li>
+                        <li>//</li>
+                    </ul>
+                </div>
                 <div className="ProjectList">
                     <div id="ProjectHeader" className="ProjectHeaderDiv">
                         <h2>▶ My projects</h2>
                     </div>
                 </div>
                 <div className="ProjectList" style={{justifyContent:"center"}}>
-                    <div style={{height:"80vh"}}>
+                    <div style={{minHeight:"80vh"}}>
                         {currProjects.map((p) => (
                             <div key={p.name} className="ProjectItem" >
-                                <img src={p.img} loading='lazy' height={"150px"} width={"150px"} className="ProjectImg"/>
+                                <img src={p.img} loading='lazy' className="ProjectImg"/>
                                 <div>
                                     <h1>{p.name}</h1>
                                     <p>{p.desc} </p>
@@ -58,8 +148,8 @@ function Projects(){
                         ))}
                     </div>
                     <div className="RowDiv" style={{justifyContent:"space-evenly", alignItems:"center"}} >
-                        <i className="bi bi-arrow-left-circle" style={{ fontSize:"2em", color:"var(--bg)", margin:"5px 10px"}} onClick={() => {
-                            if (currPage !=0) {
+                        <i className="bi bi-arrow-left-circle projectButton" onClick={() => {
+                            if (currPage !=1) {
                                 setCurrPage(currPage - 1);
                             }
                         }}></i>
@@ -68,7 +158,7 @@ function Projects(){
                             <i key={i} className="bi bi-circle-fill" onClick={() => setCurrPage(i + 1)} style={{padding: "5px 10px", color: currPage === i + 1 ? "var(--bg)" : "hsla(0, 0%, 100%, 0.226)"}}></i>
                         ))}
 
-                        <i className="bi bi-arrow-right-circle" style={{ fontSize:"2em", color:"var(--bg)", margin:"5px 10px"}} onClick={() => { 
+                        <i className="bi bi-arrow-right-circle projectButton" onClick={() => { 
                             if (currPage != totalPages) {
                                 setCurrPage(currPage + 1);
                             }

@@ -136,6 +136,16 @@ function BGShader({ dark }) {
         scrub: true
       },
     });
+    gsap.to(mesh.rotation, {
+      z: Math.PI,
+      scrollTrigger: {
+        trigger: "#introduction",
+        endTrigger: "#filler",
+        start: "10% top",
+        end: `center top`,
+        scrub: true
+      },
+    });
 
     gsap.fromTo(
       camera.rotation,

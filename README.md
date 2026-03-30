@@ -1,6 +1,5 @@
-Hi This is my portfolio created Using Vite + React
-with packages like GSAP and Three JS
+<h1>Welcome!</h1>
+<p>Hi This is my portfolio created Using Vite + React</p>
+<p>with packages like GSAP and Three JS</p>
 
-you may see the site in https://sortascary.github.io/MyPortfolio/
-
-!!!THIS IS A WORK IN PROGRESS!!!
+you may visit the demo in https://sortascary.github.io/MyPortfolio/

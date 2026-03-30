@@ -81,35 +81,37 @@ function Projects(){
                     <ul>
                         <li>Project in progress</li>
                         <li>//</li>
-                        <li>"Momento Mori"</li>
+                        <li>"Great etables"</li>
                         <li>//</li>
                         <li>Project in Progress</li>
                         <li>//</li>
-                        <li>"To live is to die"</li>
+                        <li>"El PSY CONGROO"</li>
                         <li>//</li>
                         <li>Project in Progress</li>
                         <li>//</li>
-                        <li>"My life is burning bright!"</li>
+                        <li>"See you in space, space cowboy"</li>
                         <li>//</li>
                     </ul>
                     <ul aria-hidden="true">
                         <li>Project in progress</li>
                         <li>//</li>
-                        <li>"Momento Mori"</li>
+                        <li>"Great vegetables"</li>
                         <li>//</li>
                         <li>Project in Progress</li>
                         <li>//</li>
-                        <li>"To live is to die"</li>
+                        <li>"EL PSY CONGROO"</li>
                         <li>//</li>
                         <li>Project in Progress</li>
                         <li>//</li>
-                        <li>"My life is burning bright!"</li>
+                        <li>"See you in space, space cowboy"</li>
                         <li>//</li>
                     </ul>
                 </div>
                 <div className="ProjectList">
-                    <div id="ProjectHeader" className="ProjectHeaderDiv">
-                        <h2>▶ My projects</h2>
+                    <div className="ProjectHeaderDiv" style={{backgroundColor: 'var(--text)'}}>
+                        <div id="ProjectHeader" className="ProjectHeaderDiv">
+                            <h2>▶ My projects</h2>
+                        </div>
                     </div>
                 </div>
                 <div className="ProjectList" style={{justifyContent:"center"}}>

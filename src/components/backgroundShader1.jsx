@@ -74,35 +74,6 @@ function BGShader({ dark }) {
       `
     });
 
-    const materialP = new THREE.ShaderMaterial({
-      uniforms: {
-        iTime: { value: 0.0 },
-        iResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
-      },
-      fragmentShader: `
-        uniform float iTime;
-        uniform vec2 iResolution;
-
-        void main() {
-          vec2 uv = (gl_FragCoord.xy* 2.0 - iResolution.xy) / iResolution.y;
-    
-          float d = length(uv);
-          
-          float rings = 8.0;
-          
-          float wave = sin(d*rings- iTime *2.0)/rings ;
-          
-          float ringMask = step(0.1, wave);
-
-          float currentRingIndex = d * rings;
-          float appearMask = step(currentRingIndex, iTime* 1.5);
-          float finalMask = ringMask * appearMask;
-
-          gl_FragColor = vec4(finalMask, 0.0, 0.0, 1.0);
-        }
-      `
-    });
-
     materialRef.current = material; // store it in ref for later updates
 
     const geometry = new THREE.PlaneGeometry( 11, 11 );
@@ -110,16 +81,10 @@ function BGShader({ dark }) {
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
-    // const geometryP = new THREE.PlaneGeometry(10, 10);
-    // const meshP = new THREE.Mesh(geometryP, materialP);
-    // meshP.position.setZ(7);
-    // scene.add(meshP);
-
 
     const clock = new THREE.Clock();
     function animate() {
       material.uniforms.iTime.value = clock.getElapsedTime();
-      materialP.uniforms.iTime.value = clock.getElapsedTime();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     }

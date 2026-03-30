@@ -51,7 +51,7 @@ li{
 }
 
 #mobileNav{
-  padding: 3em 0 3em 3em;
+  padding: 3em 0 3em 1em;
 }
 
 #mobileNav li{
@@ -110,7 +110,6 @@ li{
   animation: bounceTriangle 0.6s ease-in-out infinite;
 }
 
-/* responsive breakpoint */
 @media (max-width: 768px) {
   .hamburger {
     display: block;

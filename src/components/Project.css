@@ -13,8 +13,9 @@
 
 .ProjectHeaderDiv {
   background-color: white;
-  clip-path: polygon(2% 15%, 20% 0%, 100% 50%, 100% 90%, 80% 100%, 0% 60%);
+  clip-path: polygon(2% 15%, 20% 10%, 100% 50%, 100% 90%, 80% 100%, 0% 60%);
   padding: 10px;
+  filter: drop-shadow(0 10px 10px);
   position: sticky;
   top: 30%;
   bottom: 90%;
@@ -22,7 +23,7 @@
 
 .windowProject h2 {
   font-size: 30px;
-  transform: skew(5deg, 10deg);
+  transform: skew(0deg, 10deg);
 }
 
 .projectscrolling{
